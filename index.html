@@ -30,7 +30,6 @@ nav {
     padding: 10px 20px;
     margin-left: 118px;
     margin-right: 118px;
-  
 }
 
 
@@ -39,8 +38,8 @@ h1 {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  font-size: 64px;
   color: white;
-  font-size: 64;
 }
 
 h2 {
@@ -48,31 +47,64 @@ h2 {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  font-size: 48;
+  font-size: 48px;
+  color: white;
+}
+  
+  
+h3 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 44.8px;
+  text-align: right;
   color: white;
 }
   
 p {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 600;
   font-style: normal;
-  font-size: 32;
+  font-size: 30px;
   color: white;
 }
 
-.writeBig {
+h4 {
   font-family: "La Belle Aurore", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 128;
+  font-size: 128px;
   color: #FF3967;
 }
+  
+.writeBigP {
+    position: absolute;
+    top: 29%;
+    left: 16%;
+    margin: 0;
+    transform: rotate(350deg);
+  
+
+
+}
+
+.writeBigP2 {
+    position: absolute;
+    top: 42.5%;
+    left: 11%;
+    margin: 0;
+    transform: rotate(350deg);
+
+}
+  
+  
 .writeSmallP {
   font-family: "La Belle Aurore", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 64;
+  font-size: 64px;
   color: #FF3967;
 }
 
@@ -80,19 +112,21 @@ p {
   font-family: "La Belle Aurore", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 64;
+  font-size: 64px;
   color: white;
 }
 
 .lastName {
   font-family: "La Belle Aurore", cursive;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
   font-size: 64px;
   color: #462A2A;
   margin-left: auto;
   padding-left: 20px
 }
+  
+  
 
   
 a:hover {
@@ -104,7 +138,7 @@ a:hover {
   font-style: normal;
   color: #FAF7F0;
   text-decoration: none;
-    border-radius: 100px;
+  border-radius: 100px;
   border-top: 5px solid #462A2A;
   border-bottom: 5px solid #462A2A;
   border-left: 30px solid #462A2A;
@@ -118,9 +152,23 @@ a {
   font-weight: 600;
   font-style: normal;
   color: #462A2A;
-
   text-decoration: none;
+}
   
+.aSelected {
+  background-color: #462A2A;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #FAF7F0;
+  text-decoration: none;
+  border-radius: 100px;
+  border-top: 5px solid #462A2A;
+  border-bottom: 5px solid #462A2A;
+  border-left: 30px solid #462A2A;
+  border-right: 30px solid #462A2A;
 }
 
 ul {
@@ -136,34 +184,428 @@ li  {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
-}
-
-  .rectangle-container {
-  position: relative;
+  padding: 14px 30px;
 }
 
 .rectangle {
-  height: 500px;
-  width: 910px;
-  background-color: #E01E6C;
-  margin-left: 155px;
-  margin-top: 10px;
-  border-radius: 100px;
-}
-
-.rectangle h1 {
   position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust alignment */
-  font-family: "Inter", sans-serif;
-  font-size: 64px;
-  color: white;
-  margin: 0; /* Remove default margin */
+  left: 10%;
+  top: 20%;
+  height: 40%;
+  width: 80%;
+  background-image: linear-gradient(#E01E6C, #861A33);
+  border-radius: 100px;
+ 
+}
+  
+.rectangle2 {
+  position: absolute;
+  left: 10%;
+  top: 79%;
+  height: 20%;
+  width: 80%;
+  background-image: linear-gradient(#DA1169, #C30F5E);
+  border-radius: 100px;
+ 
+}
+  
+.rectangle3 {
+  position: absolute;
+  left: 52.5%;
+  top: 65%;
+  height: 50%;
+  width: 31%;
+  background-color: #FAF7F0;
+  border-radius: 100px;
+ 
+}
+  
+.rectangle4 {
+  position: absolute;
+  left: 54%;
+  top: 68%;
+  height: 80%;
+  width: 28%;
+  background-color: #861A33;
+  border-radius: 100px;
+ 
+}
+  
+    
+.rectangle5 {
+  position: absolute;
+  left: 10%;
+  top: 102%;
+  height: 70%;
+  width: 35%;
+  background-color: #861A33;
+  border-radius: 100px;
+ 
+}
+
+.rectangle6 {
+  position: absolute;
+  left: 47%;
+  top: 120%;
+  height: 115%;
+  width: 43%;
+  background-color: #DA1169;
+  border-radius: 100px;
+ 
+}
+  
+.rectangle7 {
+  position: absolute;
+  left: 10%;
+  top: 175%;
+  height: 60%;
+  width: 80%;
+  background-image: linear-gradient(#DA1169, #861A33);
+  border-radius: 100px;
+ 
 }
 
 
+.nameHeader {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    margin: 0;
+  }
+  
+.nameHeader2 {
+    position: absolute;
+    top: 86%;
+    left: 15%;
+    margin: 0;
+    
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+    padding-right: 33%;
+    box-sizing: border-box;
+
+  }
+  
+.nameHeader3 {
+    position: absolute;
+    top: 73%;
+    left: 64%;
+    margin: 0;
+      
+    
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+    padding-right: 55%;
+    box-sizing: border-box;
+
+  }
+  
+  .nameHeader4 {
+    position: absolute;
+    top: 108%;
+    left: 64%;
+    margin: 0;
+    
+      word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+    padding-right: 53%;
+    box-sizing: border-box;
+
+
+  }
+  
+  .nameHeader5 {
+
+    position: absolute;
+    top: 110%;
+    left: 15%;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+    padding-right: 45%;
+    box-sizing: border-box;
+
+  }
+  
+    
+  .nameHeader6 {
+
+    position: absolute;
+    top: 180%;
+    left: 15%;
+    margin: 0;
+
+  }
+  
+  
+    .nameAcademy {
+
+    position: absolute;
+    top: 155%;
+    left: 56%;
+    margin: 0;
+
+    padding-right: 8%;
+    text-align: right;
+      
+  
+
+  }
+  
+    
+    .nameAcademy2 {
+
+    position: absolute;
+    top: 175%;
+    left: 62%;
+    margin: 0;
+        text-align: right;
+
+  }
+  
+      .nameAcademy3 {
+
+    position: absolute;
+    top: 195%;
+    left: 62%;
+    margin: 0;
+          text-align: right;
+
+  }
+  
+  .nameAcademy4 {
+
+    position: absolute;
+    top: 215%;
+    left: 62%;
+    margin: 0;
+      text-align: right;
+
+
+  }
+
+  
+  .textHeader {
+    position: absolute;
+    top: 80%;
+    left: 57%;
+    margin: 0;
+    
+  }
+  
+  .textHeader2 {
+    position: absolute;
+    top: 86%;
+    left: 57%;
+    margin: 0;
+  }
+  
+    .textHeader3 {
+    position: absolute;
+    top: 92%;
+    left: 57%;
+    margin: 0;
+  }
+  
+  .textHeader4 {
+    position: absolute;
+    top: 98%;
+    left: 57%;
+    margin: 0;
+  }
+  
+    
+  .textHeader5 {
+    position: absolute;
+    top: 115%;
+    left: 57%;
+    margin: 0;
+  }
+  
+  .textHeader6 {
+    position: absolute;
+    top: 121%;
+    left: 57%;
+    margin: 0;
+  }
+  
+    .textHeader7 {
+    position: absolute;
+    top: 127%;
+    left: 57%;
+    margin: 0;
+  }
+  
+  .textHeader8 {
+    position: absolute;
+    top: 133%;
+    left: 57%;
+    margin: 0;
+  }
+  
+   .textHeader9 {
+    position: absolute;
+    top: 186%;
+    left: 15%;
+    margin: 0;
+    opacity: 0.5;
+  }
+  
+   .textHeader10 {
+    position: absolute;
+    top: 130%;
+    left: 27%;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+    padding-right: 53%;
+    box-sizing: border-box;
+
+
+  }
+  
+.textHeader11 {
+    position: absolute;
+    top: 138%;
+    left: 15%;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+    padding-right: 45%;
+    box-sizing: border-box;
+  }
+  
+  .textHeader12 {
+    position: absolute;
+    top: 146%;
+    left: 30%;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+    padding-right: 45%;
+    box-sizing: border-box;
+  }
+  
+  .textHeader13 {
+    position: absolute;
+    top: 154%;
+    left: 15%;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+    padding-right: 45%;
+    box-sizing: border-box;
+  }
+  
+  .textHeader14 {
+    position: absolute;
+    top: 162%;
+    left: 31.5%;
+    margin: 0;
+   
+    padding-left: 0%;
+    padding-right: 0%;
+    text-align: right;
+  }
+  
+    .textHeader15 {
+    position: absolute;
+    top: 182%;
+    left: 60%;
+    margin: 0;
+    padding-left: 7.5%;
+    padding-right: 15%;
+    text-align: right;
+  }
+  
+     .textHeader16 {
+    position: absolute;
+    top: 202%;
+    left: 62%;
+    margin: 0;
+         text-align: right;
+  }
+   
+       .textHeader17 {
+    position: absolute;
+    top: 222%;
+    left: 62%;
+    margin: 0;
+           text-align: right;
+  }
+
+
+  .emoji {
+    position: absolute;
+    top: 121%;
+    left: 15%;
+    font-size: 400%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+  }
+  
+  .emoji2 {
+    position: absolute;
+    top: 129%;
+    left: 35%;
+    font-size: 400%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+  }
+  
+    .emoji3 {
+    position: absolute;
+    top: 137%;
+    left: 15%;
+    font-size: 400%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+  }
+  
+      .emoji4 {
+    position: absolute;
+    top: 145%;
+    left: 35%;
+    font-size: 400%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 70%;
+  }
+
+  .cat-image {
+    position: absolute;
+    top: 10.5%;
+    left: 55%;
+    z-index: 9999;
+    opacity: 80%;
+    width: 30%;
+    height: 49.5%;
+    
+  }
+  
+    .cat2-image {
+    position: absolute;
+    top: 189%;
+    left: 16%;
+    z-index: 9999;
+    opacity: 100%;
+    width: 30%;
+    height: 46%;
+    
+  }
+  
+  
 </style>
   
 
@@ -173,17 +615,134 @@ li  {
 
 <nav>
   <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a class="aSelected" href="#home">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
     <li><a href="#devlog">Dev Log</a></li>
     <li><a href="#contactme">Contact Me</a></li>
   </ul>
   <div class="lastName">Antequera</div>
-
 </nav>
+
   
-<div class="lastName">hi</div>
+  
+<div class="rectangle"></div>
+  
+<h1 class="nameHeader">
+  My name is...
+</h1>
+
+<img src="cat1.png" alt="cat1" class="cat-image">
+  
+<h4 class="writeBigP">Alejandra</h4>
+  
+<h4 class="writeBigP2">Antequera</h4>
+  
+  
+  
+<div class="rectangle2"></div>
+  
+<h2 class="nameHeader2">Skills that pay the bills</h2>
+
+  <div class="rectangle6"></div>
+  
+  
+
+<div class="rectangle7"></div>
+  
+
+  
+<div class="rectangle3"></div>
+
+<div class="rectangle4"></div>
 
 
+                                                                                                             
+<div class="rectangle5"></div>
+ 
+
+<h2 class="nameHeader3">Coding</h2>
+
+  
+<p class="textHeader">HTML<img src="stars4.png" alt="4/5 stars" width="30%" height="1%" style="vertical-align: center; margin-left:5%;"></p>
+  
+<p class="textHeader2">P5js<img src="stars3.png" alt="4/5 stars" width="30%" height="1%" style="vertical-align: center; margin-left:5%;"></p>
+  
+<p class="textHeader3">C#<img src="stars2.png" alt="4/5 stars" width="30%" height="1%" style="vertical-align: center; margin-left:5%;"></p>
+
+  
+<p class="textHeader4">C++<img src="stars1.png" alt="4/5 stars" width="30%" height="1%" style="vertical-align: center; margin-left:5%;"></p>
+  
+
+  
+<h2 class="nameHeader4">Softwares</h2>
+
+  
+  
+  
+<p class="textHeader5">B3D<img src="stars5.png" alt="4/5 stars" width="30%" height="1%" style="vertical-align: center; margin-left:5%;"></p>
+ 
+<p class="textHeader6">UNITY<img src="stars4.png" alt="4/5 stars" width="30%" height="1%" style="vertical-align: center; margin-left:5%;"></p>
+  
+<p class="textHeader7">AI<img src="stars3.png" alt="4/5 stars" width="30%" height="1%" style="vertical-align: center; margin-left:5%;"></p>
+  
+<p class="textHeader8">Figma<img src="stars3.png" alt="4/5 stars" width="30%" height="1%" style="vertical-align: center; margin-left:5%;"></p>
+  
+<h2 class="nameHeader5">I can understand you in...</h2>
+  
+  
+<p class="emoji">&#x1F1E8;&#x1F1E6;</p>
+
+  
+<p class="textHeader10">fluent english</p>
+  
+    
+<p class="emoji2">		🇪🇸</p>
+  
+  
+<p class="textHeader11">en español</p>
+  
+<p class="emoji3">		🇮🇹</p>
+  
+<p class="textHeader12">in italiano</p>
+  
+    
+<p class="emoji4">		🇷🇺</p>
+  
+  
+  
+<p class="textHeader13">на русском языке</p>
+  
+  
+  
+  
+  
+<h2 class="nameHeader6">Courses and education...</h2>
+  
+  
+<img src="cat2.png" alt="cat2" class="cat2-image">
+
+<p class="textHeader9">That I spent too much money on</p>
+  
+<h3 class="nameAcademy">P2Design Academy</h3>
+
+<p class="textHeader14">Art of Effective Rigging 2,
+Alive! animation course in Blender</p>
+
+<h3 class="nameAcademy2">Code Monkey</h3>
+
+<p class="textHeader15">Learn Unity Beginner/Intermediate 2024 </p>
+  
+<h3 class="nameAcademy3">Libel Academy</h3>
+
+<p class="textHeader16">Escultura Digital en Blender: Elfa Hardsurface</p>
+  
+  <h3 class="nameAcademy4">CGBoost</h3>
+
+<p class="textHeader17">Magic Storybook</p>
+  
+
+
+  
+  
 </body>
 </html>
