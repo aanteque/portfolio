@@ -1,543 +1,541 @@
 <!DOCTYPE html>
 <html lang="eng-ca">
-<!--Note the use of Google Fonts in this exercise (see the below line in my <head> referencing the two fonts I use in the CSS file), Google offers free web fonts and they are *really* easy to implemment, see https://fonts.google.com/ for more info-->
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GBDA228 Final</title>
-  
- <!-- created by Alejandra Antequera on Thursday December 5-->  
+  <!--Note the use of Google Fonts in this exercise (see the below line in my <head> referencing the two fonts I use in the CSS file), Google offers free web fonts and they are *really* easy to implemment, see https://fonts.google.com/ for more info-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBDA228 Final</title>
+
+    <!-- created by Alejandra Antequera on Thursday December 5-->
 
 
-  
- <!-- fonts -->  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=La+Belle+Aurore&display=swap" rel="stylesheet">
 
 
-  
-<style>
-html{
- height: 100%;
- width: 100%;
-}
 
-body {
-  background-color: #FAF7F0;
-   height: 100%;
- width: 100%;
-} 
-  
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: spcae-between;
-    padding: 10px 20px;
-    margin-left: 118px;
-    margin-right: 118px;
-}
-  
-.a1:hover {
-  background-color: #462A2A;
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: #FAF7F0;
-  text-decoration: none;
-  border-radius: 100px;
-  border-top: 5px solid #462A2A;
-  border-bottom: 5px solid #462A2A;
-  border-left: 30px solid #462A2A;
-  border-right: 30px solid #462A2A;
-}
-  
-a {
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: #462A2A;
-  text-decoration: none;
-}
-  
-    
-.aSelected {
-  background-color: #462A2A;
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: #FAF7F0;
-  text-decoration: none;
-  border-radius: 100px;
-  border-top: 5px solid #462A2A;
-  border-bottom: 5px solid #462A2A;
-  border-left: 30px solid #462A2A;
-  border-right: 30px solid #462A2A;
-}
+    <style>
+      html {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        background-color: #FAF7F0;
+        height: 100%;
+        width: 100%;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: spcae-between;
+        padding: 10px 20px;
+        margin-left: 118px;
+        margin-right: 118px;
+      }
+
+      .a1:hover {
+        background-color: #462A2A;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        color: #FAF7F0;
+        text-decoration: none;
+        border-radius: 100px;
+        border-top: 5px solid #462A2A;
+        border-bottom: 5px solid #462A2A;
+        border-left: 30px solid #462A2A;
+        border-right: 30px solid #462A2A;
+      }
+
+      a {
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        color: #462A2A;
+        text-decoration: none;
+      }
 
 
-  
-  
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+      .aSelected {
+        background-color: #462A2A;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        color: #FAF7F0;
+        text-decoration: none;
+        border-radius: 100px;
+        border-top: 5px solid #462A2A;
+        border-bottom: 5px solid #462A2A;
+        border-left: 30px solid #462A2A;
+        border-right: 30px solid #462A2A;
+      }
 
 
-li  {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 30px;
-}
-  
-  .nav2 {
-    display: flex;
-    align-items: center;
-    justify-content: spcae-between;
-    position: absolute;
-    z-index: 9999;
-    width: 100%;
-    height: auto;
-    padding: 185px 500px;
-}
-
-  
-  .a2 {
-  font-size: 30px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: white;
-  text-decoration: none;
-
-}
-  
-  .a2:hover {
-  background-color: transparent;
-  font-size: 30px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: #FFBF76;
-  text-decoration: none;
-}
-
-.ul2 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
 
-.li2  {
-  float: left;
-  display: block;
-  color: blue;
-  text-align: center;
-  padding: 14px 30px;
-}
-
-  
-  
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
 
 
-h1 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-size: 64px;
-  color: #462A2A;
-}
+      li {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 30px;
+      }
 
-h2 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-size: 48px;
-  color: white;
-}
-  
-  
-h3 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-size: 44.8px;
-  text-align: right;
-  color: white;
-}
-  
-p {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 30px;
-  color: white;
-}
-
-h4 {
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 80px;
-  color: white;
-}
-  
-.writeBigP {
-    position: absolute;
-    top: 29%;
-    left: 16%;
-    margin: 0;
-    transform: rotate(350deg);
-  
+      .nav2 {
+        display: flex;
+        align-items: center;
+        justify-content: spcae-between;
+        position: absolute;
+        z-index: 9999;
+        width: 100%;
+        height: auto;
+        padding: 185px 500px;
+      }
 
 
-}
+      .a2 {
+        font-size: 30px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        color: white;
+        text-decoration: none;
 
-.writeBigP2 {
-    position: absolute;
-    top: 42.5%;
-    left: 11%;
-    margin: 0;
-    transform: rotate(350deg);
+      }
 
-}
-  
-  
-.writeSmallP {
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 64px;
-  color: #FF3967;
-}
+      .a2:hover {
+        background-color: transparent;
+        font-size: 30px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        color: #FFBF76;
+        text-decoration: none;
+      }
 
-.writeSmallW {
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 64px;
-  color: white;
-}
+      .ul2 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
 
-.lastName {
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 64px;
-  color: #462A2A;
-  margin-left: auto;
-  padding-left: 20px
-}
-  
-  
 
-  
-  
-    
-  .textHeader {
-    position: absolute;
-    top: 80%;
-    left: 57%;
-    margin: 0;
-    
-  }
+      .li2 {
+        float: left;
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 14px 30px;
+      }
 
-.rectangle {
-  position: absolute;
-  left: 10%;
-  top: 20%;
-  height: 210%;
-  width: 80%;
-  background-image: linear-gradient(#E01E6C, #861A33);
-  border-radius: 100px;
- 
-}
-  
-.rectangle2 {
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  height: 80%;
-  width: 50%;
-  background: #FAF7F0;
-  border-radius: 100px;
- 
-}
-  
-.rectangle3 {
-  position: absolute;
-  left: 2%;
-  top: 55%;
-  height: 70%;
-  width: 45%;
-  background: #861A33;
-  border-radius: 100px;
- 
-}
-  
- .rectangle4 {
-  position: absolute;
-  left: 0%;
-  top: 55%;
-  height: 70%;
-  width: 25%;
-  background: #861A33;
 
-}
+
+
+
+      h1 {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-size: 64px;
+        color: #462A2A;
+      }
+
+      h2 {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-size: 48px;
+        color: white;
+      }
+
+
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-size: 44.8px;
+        text-align: right;
+        color: white;
+      }
+
+      p {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 30px;
+        color: white;
+      }
+
+      h4 {
+        font-family: "La Belle Aurore", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 80px;
+        color: white;
+      }
+
+      .writeBigP {
+        position: absolute;
+        top: 29%;
+        left: 16%;
+        margin: 0;
+        transform: rotate(350deg);
+
+
+
+      }
+
+      .writeBigP2 {
+        position: absolute;
+        top: 42.5%;
+        left: 11%;
+        margin: 0;
+        transform: rotate(350deg);
+
+      }
+
+
+      .writeSmallP {
+        font-family: "La Belle Aurore", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 64px;
+        color: #FF3967;
+      }
+
+      .writeSmallW {
+        font-family: "La Belle Aurore", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 64px;
+        color: white;
+      }
+
+      .lastName {
+        font-family: "La Belle Aurore", cursive;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 64px;
+        color: #462A2A;
+        margin-left: auto;
+        padding-left: 20px
+      }
 
 
 
 
 
 
-  .catImage {
-    position: absolute;
-    top: 55%;
-    left: 2%;
-    z-index: 9999;
+      .textHeader {
+        position: absolute;
+        top: 80%;
+        left: 57%;
+        margin: 0;
 
-    width: 40%;
-    height: 60%;
-    
-  }
-  
-    .navImage {
-    position: absolute;
-    top: 28%;
-    left: 7.25%;
-    width: 84%;
-    height: 18%;
-    z-index: 9998;
-    
-  }
+      }
 
-  
-    .picBubble {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    z-index: 9999;
+      .rectangle {
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        height: 210%;
+        width: 80%;
+        background-image: linear-gradient(#E01E6C, #861A33);
+        border-radius: 100px;
 
-    width: 60%;
-    height: 30%;
-    
-  }
-  
-  
-    .picImage {
-    position: absolute;
-    top: 155%;
-    left: 0%;
-    z-index: 9999;
+      }
 
-    width: 30%;
-    height: 60%;
-    
-  }
-  
-  .picImage2 {
-    position: absolute;
-    top: 155%;
-    left: 35%;
-    z-index: 9999;
+      .rectangle2 {
+        position: absolute;
+        left: 0%;
+        top: 50%;
+        height: 80%;
+        width: 50%;
+        background: #FAF7F0;
+        border-radius: 100px;
 
-    width: 30%;
-    height: 60%;
-    
-  }
-  
-    .picImage3 {
-    position: absolute;
-    top: 155%;
-    left: 70%;
-    z-index: 9999;
+      }
 
-    width: 30%;
-    height: 60%;
-    
-  }
-  
-  
-  
-  .nameHeader {
-    position: absolute;
-    top: 140%;
-    left: 39%;
-    margin: 0;
-    text-align: center;
-  }
-  
-    
-  .nameHeader2 {
-    position: absolute;
-    top: 54%;
-    left: 60%;
-    margin: 0;
-    text-align: center;
-    z-index: 99999;
-  }
-  
-    .nameHeader3 {
-    position: absolute;
-    top: 100%;
-    left: 52%;
-    margin: 0%;
-    padding: 0 20px;
-    text-align: right;
-    z-index: 99999;
-    width: 70%;
-    max-width: 600px;
-  }
-  
-    .nameHeader4 {
-    position: absolute;
-    top: 85%;
-    left: 52%;
-    margin: 0%;
-    padding: 0 20px;
-    text-align: right;
-    z-index: 99999;
-    width: 70%;
-    max-width: 600px;
-      
-  }
-  
-  .nameHeader5 {
-    position: absolute;
-    top: 200%;
-    left: -8%;
-    margin: 0%;
-    padding: 0px 0px;
-    text-align: right;
-    z-index: 99999;
-    width: 70%;
-    max-width: 600px;
-    transform: rotate(350deg); 
-  }
-  
-    .nameHeader6 {
-    position: absolute;
-    top: 200%;
-    left: 480px;
-    margin: 0%;
-    padding: 0px 0px;
-    text-align: right;
-    z-index: 99999;
-    width: 70%;
-    max-width: 600px;
-    transform: rotate(350deg);
-      
-  }
-  
+      .rectangle3 {
+        position: absolute;
+        left: 2%;
+        top: 55%;
+        height: 70%;
+        width: 45%;
+        background: #861A33;
+        border-radius: 100px;
+
+      }
+
+      .rectangle4 {
+        position: absolute;
+        left: 0%;
+        top: 55%;
+        height: 70%;
+        width: 25%;
+        background: #861A33;
+
+      }
+
+
+
+
+
+
+      .catImage {
+        position: absolute;
+        top: 55%;
+        left: 2%;
+        z-index: 9999;
+
+        width: 40%;
+        height: 60%;
+
+      }
+
+      .navImage {
+        position: absolute;
+        top: 28%;
+        left: 7.25%;
+        width: 84%;
+        height: 18%;
+        z-index: 9998;
+
+      }
+
+
+      .picBubble {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        z-index: 9999;
+
+        width: 60%;
+        height: 30%;
+
+      }
+
+
+      .picImage {
+        position: absolute;
+        top: 155%;
+        left: 0%;
+        z-index: 9999;
+
+        width: 30%;
+        height: 60%;
+
+      }
+
+      .picImage2 {
+        position: absolute;
+        top: 155%;
+        left: 35%;
+        z-index: 9999;
+
+        width: 30%;
+        height: 60%;
+
+      }
+
+      .picImage3 {
+        position: absolute;
+        top: 155%;
+        left: 70%;
+        z-index: 9999;
+
+        width: 30%;
+        height: 60%;
+
+      }
+
+
+
+      .nameHeader {
+        position: absolute;
+        top: 140%;
+        left: 39%;
+        margin: 0;
+        text-align: center;
+      }
+
+
+      .nameHeader2 {
+        position: absolute;
+        top: 54%;
+        left: 60%;
+        margin: 0;
+        text-align: center;
+        z-index: 99999;
+      }
+
+      .nameHeader3 {
+        position: absolute;
+        top: 100%;
+        left: 52%;
+        margin: 0%;
+        padding: 0 20px;
+        text-align: right;
+        z-index: 99999;
+        width: 70%;
+        max-width: 600px;
+      }
+
+      .nameHeader4 {
+        position: absolute;
+        top: 85%;
+        left: 52%;
+        margin: 0%;
+        padding: 0 20px;
+        text-align: right;
+        z-index: 99999;
+        width: 70%;
+        max-width: 600px;
+
+      }
+
+      .nameHeader5 {
+        position: absolute;
+        top: 200%;
+        left: -8%;
+        margin: 0%;
+        padding: 0px 0px;
+        text-align: right;
+        z-index: 99999;
+        width: 70%;
+        max-width: 600px;
+        transform: rotate(350deg);
+      }
+
+      .nameHeader6 {
+        position: absolute;
+        top: 200%;
+        left: 480px;
+        margin: 0%;
+        padding: 0px 0px;
+        text-align: right;
+        z-index: 99999;
+        width: 70%;
+        max-width: 600px;
+        transform: rotate(350deg);
+
+      }
+
       .nameHeader7 {
-    position: absolute;
-    top: 200%;
-    left: 1100px;
-    margin: 0%;
-    padding: 0px 0px;
-    text-align: right;
-    z-index: 99999;
-    width: 70%;
-    max-width: 600px;
-    transform: rotate(350deg);
-      
-  }
-  
-  
-</style>
-  
+        position: absolute;
+        top: 200%;
+        left: 1100px;
+        margin: 0%;
+        padding: 0px 0px;
+        text-align: right;
+        z-index: 99999;
+        width: 70%;
+        max-width: 600px;
+        transform: rotate(350deg);
+
+      }
+    </style>
 
 
-</head>
-<body>
 
-<nav>
-  <ul>
-    <li><a class="a1" href="#home">Home</a></li>
-    <li><a class="aSelected" href="#portfolio">Portfolio</a></li>
-    <li><a class="a1" href="#devlog">Dev Log</a></li>
-    <li><a class="a1" href="#contactme">Contact Me</a></li>
-  </ul>
-  <div class="lastName">Antequera</div>
-</nav>
-  
-<div class="nav2">
-  <ul class="ul2">
-    <li class="li2"><a class="a2" href="#coding">Coding Projects</a></li>
-    <li class="li2"><a class="a2" href="#3Dart">3D Art</a></li>
-    <li class="li2"><a class="a2" href="#2Dart">2D Art</a></li>
-  </ul>
-</div>
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li><a class="aSelected" href="https://aanteque.github.io/GBDA228---Final/#home">Home</a></li>
+        <li><a href="https://aanteque.github.io/portfolio/">Portfolio</a></li>
+        <li><a href="https://aanteque.github.io/realDevlog/">Dev Log</a></li>
+        <li><a href="https://aanteque.github.io/contactMe/#portfolio">Contact Me</a></li>
+      </ul>
+      <div class="lastName">Antequera</div>
+    </nav>
+
+    <div class="nav2">
+      <ul class="ul2">
+        <li class="li2"><a class="a2" href="#coding">Coding Projects</a></li>
+        <li class="li2"><a class="a2" href="#3Dart">3D Art</a></li>
+        <li class="li2"><a class="a2" href="#2Dart">2D Art</a></li>
+      </ul>
+    </div>
 
 
-  
-  
-<div class="rectangle">
-</div>
-  
-  
-<div class="rectangle2">
-</div>
-  
-  <div class="rectangle3">
-</div>
+
+
+    <div class="rectangle">
+    </div>
+
+
+    <div class="rectangle2">
+    </div>
+
+    <div class="rectangle3">
+    </div>
 
     <div class="rectangle4">
-</div>
+    </div>
 
-<img src="cat3.png" alt="cat1" class="catImage">
-  
-<img src="nav.png" alt="nav" class="navImage">
-  <h1 class="nameHeader2">
-  About my art...
-  </h1>
-<img src="bub.png" alt="picture" class="picBubble">
-  
-  <p class="nameHeader4">
-I consider myself a multimedia artist with an interest in video games and 3d art in particular!
-  </p>
+    <img src="cat3.png" alt="cat1" class="catImage">
 
-  <p class="nameHeader3">
-I love working with blender and have recently being trying to learn unity as well!
-  </p>
+    <img src="nav.png" alt="nav" class="navImage">
+    <h1 class="nameHeader2">
+      About my art...
+    </h1>
+    <img src="bub.png" alt="picture" class="picBubble">
 
-  
-<h2 class="nameHeader">
-  Suggested Works
-  </h2>
-  
-  
-<img src="pic1.png" alt="picture" class="picImage">
-  
-<img src="pic2.png" alt="picture" class="picImage2">
-  
-<img src="pic3.png" alt="picture" class="picImage3">
-  
-  
-<h4 class="nameHeader5"> Butterflies</h4>
-  
-<h4 class="nameHeader6"> Kitchen Chaos</h4>
-  
-  <h4 class="nameHeader7"> Alchemy Lab</h4>
-  
-  
-</body>
+    <p class="nameHeader4">
+      I consider myself a multimedia artist with an interest in video games and 3d art in particular!
+    </p>
+
+    <p class="nameHeader3">
+      I love working with blender and have recently being trying to learn unity as well!
+    </p>
+
+
+    <h2 class="nameHeader">
+      Suggested Works
+    </h2>
+
+
+    <img src="pic1.png" alt="picture" class="picImage">
+
+    <img src="pic2.png" alt="picture" class="picImage2">
+
+    <img src="pic3.png" alt="picture" class="picImage3">
+
+
+    <h4 class="nameHeader5"> Butterflies</h4>
+
+    <h4 class="nameHeader6"> Kitchen Chaos</h4>
+
+    <h4 class="nameHeader7"> Alchemy Lab</h4>
+
+
+  </body>
 </html>
